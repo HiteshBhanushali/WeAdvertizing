@@ -1,0 +1,735 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeAdvertizer - IT Consulting & Marketing Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0A2342',
+                        teal: '#00C2C7',
+                        white: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        opensans: ['Open Sans', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        .gradient-bg-alt {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00C2C7, #6a11cb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.9) 0%, rgba(0, 194, 199, 0.8) 100%), 
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .counter-value {
+            transition: all 0.5s ease;
+        }
+        .scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+        }
+        .chat-button {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-navy bg-opacity-95 text-white z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <svg class="w-10 h-10 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#00C2C7" stroke-width="3" fill="none"/>
+                    <path d="M25 5V25M25 25V45M25 25L5 15M25 25L45 15" stroke="#00C2C7" stroke-width="2" fill="none"/>
+                </svg>
+                <span class="text-2xl font-bold font-poppins">WeAdvertizer</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="font-poppins font-medium hover:text-teal transition-colors">Home</a>
+                <a href="#about" class="font-poppins font-medium hover:text-teal transition-colors">About</a>
+                <a href="#services" class="font-poppins font-medium hover:text-teal transition-colors">Services</a>
+                <a href="#case-studies" class="font-poppins font-medium hover:text-teal transition-colors">Case Studies</a>
+                <a href="#contact" class="font-poppins font-medium hover:text-teal transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden bg-navy bg-opacity-95 pb-4 px-4">
+            <a href="#home" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Home</a>
+            <a href="#about" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">About</a>
+            <a href="#services" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Services</a>
+            <a href="#case-studies" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Case Studies</a>
+            <a href="#contact" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-white fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-4xl font-bold font-poppins mb-4">WeAdvertizer – Building Brands, Powering Digital Transformation.</h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 font-opensans">From innovative marketing to AI-powered business solutions.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-teal hover:bg-opacity-80 text-navy font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                            Start Your Digital Journey
+                        </a>
+                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:bg-opacity-10 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                            Schedule a Free Consultation
+                        </a>
+                    </div>
+                </div>
+                <div class="relative fade-in">
+                    <div class="animate-float">
+                        <svg class="w-full h-auto" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M250 50C138.5 50 50 138.5 50 250C50 361.5 138.5 450 250 450C361.5 450 450 361.5 450 250C450 138.5 361.5 50 250 50Z" fill="#0A2342" fill-opacity="0.2" stroke="#00C2C7" stroke-width="3"/>
+                            <path d="M250 100C166.5 100 100 166.5 100 250C100 333.5 166.5 400 250 400C333.5 400 400 333.5 400 250C400 166.5 333.5 100 250 100Z" fill="#0A2342" fill-opacity="0.3" stroke="#00C2C7" stroke-width="2"/>
+                            <g opacity="0.9">
+                                <path d="M300 200L200 250L300 300L300 200Z" fill="#00C2C7"/>
+                                <path d="M180 180H220V220H180V180Z" fill="white"/>
+                                <path d="M280 280H320V320H280V280Z" fill="white"/>
+                                <path d="M180 280H220V320H180V280Z" fill="#00C2C7"/>
+                            </g>
+                            <circle cx="250" cy="250" r="15" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-16">
+                <a href="#about" class="animate-bounce">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Impact Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4 text-navy">About <span class="gradient-text">WeAdvertizer</span></h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We transform businesses through innovative marketing strategies and cutting-edge technology solutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="bg-navy rounded-lg p-8 relative z-10">
+                            <h3 class="text-2xl font-bold font-poppins text-white mb-4">Our Story</h3>
+                            <p class="text-white opacity-90 mb-6">Founded with a vision to bridge the gap between marketing excellence and technological innovation, WeAdvertizer has grown into a powerhouse of digital transformation.</p>
+                            <p class="text-white opacity-90">Our team of experts combines creative thinking with technical expertise to deliver solutions that drive real business growth.</p>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-full h-full bg-teal rounded-lg -z-10"></div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="100">0</div>
+                            <p class="text-navy font-medium">Brands Built</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="500">0</div>
+                            <p class="text-navy font-medium">Campaigns Launched</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="99">0</div>
+                            <p class="text-navy font-medium">Client Satisfaction %</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="50">0</div>
+                            <p class="text-navy font-medium">Team Experts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center fade-in">
+                <a href="#services" class="inline-block bg-navy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                    Discover Our Impact
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4">Our <span class="text-teal">Services</span></h2>
+                <p class="text-lg max-w-3xl mx-auto opacity-90">Comprehensive solutions tailored to elevate your business in the digital landscape.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 service-card fade-in">
+                    <div class="bg-teal bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins mb-3">Product Marketing</h3>
+                    <p class="mb-6 opacity-90">Strategic marketing solutions to position your products for maximum market impact and customer engagement.</p>
+                    <a href="#contact" class="inline-block bg-teal text-navy font-medium py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors">Learn More</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 service-card fade-in">
+                    <div class="bg-teal bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins mb-3">IT Consulting</h3>
+                    <p class="mb-6 opacity-90">Expert guidance on website and app development, technology infrastructure, and digital strategy.</p>
+                    <a href="#contact" class="inline-block bg-teal text-navy font-medium py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors">Book Demo</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 service-card fade-in">
+                    <div class="bg-teal bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins mb-3">Data Analytics</h3>
+                    <p class="mb-6 opacity-90">Transform raw data into actionable insights that drive informed business decisions and growth strategies.</p>
+                    <a href="#contact" class="inline-block bg-teal text-navy font-medium py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors">Learn More</a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-6 service-card fade-in">
+                    <div class="bg-teal bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-teal" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold font-poppins mb-3">n8n Automation</h3>
+                    <p class="mb-6 opacity-90">Streamline your business processes with powerful workflow automation tools that save time and reduce errors.</p>
+                    <a href="#contact" class="inline-block bg-teal text-navy font-medium py-2 px-4 rounded-lg hover:bg-opacity-80 transition-colors">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4 text-navy">Case <span class="gradient-text">Studies</span></h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">See how we've helped businesses transform their digital presence and achieve remarkable results.</p>
+            </div>
+            
+            <div class="case-studies-slider overflow-x-auto pb-8 fade-in">
+                <div class="flex space-x-6 min-w-max">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-80 flex-shrink-0">
+                        <div class="h-48 bg-navy relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-teal opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold font-poppins mb-2 text-navy">TechGrow Startup</h3>
+                            <p class="text-gray-600 mb-4">Increased online visibility by 200% and customer acquisition by 150% through targeted marketing campaigns.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Duration: 3 months</span>
+                                <span>ROI: 320%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-80 flex-shrink-0">
+                        <div class="h-48 bg-navy relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-teal opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold font-poppins mb-2 text-navy">RetailPlus Chain</h3>
+                            <p class="text-gray-600 mb-4">Implemented data analytics solution that increased operational efficiency by 35% and reduced costs by 20%.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Duration: 6 months</span>
+                                <span>ROI: 280%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-80 flex-shrink-0">
+                        <div class="h-48 bg-navy relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-teal opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold font-poppins mb-2 text-navy">FinServe Solutions</h3>
+                            <p class="text-gray-600 mb-4">Automated customer service workflows resulting in 70% faster response times and 45% higher satisfaction scores.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Duration: 4 months</span>
+                                <span>ROI: 410%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Case Study 4 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden w-80 flex-shrink-0">
+                        <div class="h-48 bg-navy relative">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-24 h-24 text-teal opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold font-poppins mb-2 text-navy">HealthTech Innovators</h3>
+                            <p class="text-gray-600 mb-4">Developed a custom app that streamlined patient management, increasing daily appointments by 40%.</p>
+                            <div class="flex justify-between text-sm text-gray-500">
+                                <span>Duration: 8 months</span>
+                                <span>ROI: 250%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonials -->
+            <div class="mt-20 fade-in">
+                <h3 class="text-2xl font-bold font-poppins mb-10 text-center text-navy">What Our Clients Say</h3>
+                
+                <div class="testimonials-slider relative">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Testimonial 1 -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg relative">
+                            <div class="absolute -top-5 left-6 bg-teal rounded-full w-10 h-10 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <div class="pt-4">
+                                <p class="text-gray-600 italic mb-4">"WeAdvertizer transformed our digital presence completely. Their marketing strategy increased our leads by 200% in just three months."</p>
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold mr-3">JD</div>
+                                    <div>
+                                        <h4 class="font-bold text-navy">John Doe</h4>
+                                        <p class="text-sm text-gray-500">CEO, TechGrow</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg relative">
+                            <div class="absolute -top-5 left-6 bg-teal rounded-full w-10 h-10 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <div class="pt-4">
+                                <p class="text-gray-600 italic mb-4">"The automation solutions provided by WeAdvertizer saved us countless hours and dramatically improved our customer service response times."</p>
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold mr-3">JS</div>
+                                    <div>
+                                        <h4 class="font-bold text-navy">Jane Smith</h4>
+                                        <p class="text-sm text-gray-500">Operations Director, FinServe</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="bg-white p-6 rounded-xl shadow-lg relative">
+                            <div class="absolute -top-5 left-6 bg-teal rounded-full w-10 h-10 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+                            <div class="pt-4">
+                                <p class="text-gray-600 italic mb-4">"Their data analytics solution gave us insights we never knew existed. We've been able to make much more informed business decisions."</p>
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-navy rounded-full flex items-center justify-center text-white font-bold mr-3">RJ</div>
+                                    <div>
+                                        <h4 class="font-bold text-navy">Robert Johnson</h4>
+                                        <p class="text-sm text-gray-500">CTO, RetailPlus</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <a href="#contact" class="inline-block bg-navy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                    Explore Our Success Stories
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg-alt">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4 text-white">Your Brand, Our Mission</h2>
+                <p class="text-lg text-white opacity-90 max-w-3xl mx-auto">Ready to transform your business? Get in touch with our team of experts today.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <form class="bg-white rounded-xl p-8 shadow-xl">
+                        <h3 class="text-2xl font-bold font-poppins mb-6 text-navy">Send us a message</h3>
+                        
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal" placeholder="John Doe">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal" placeholder="john@example.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Your Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal" placeholder="How can we help you?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-teal hover:bg-opacity-90 text-navy font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                            Send Inquiry
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="text-white fade-in">
+                    <h3 class="text-2xl font-bold font-poppins mb-6">Get in Touch</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <p class="opacity-90">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="opacity-90">info@weadvertizer.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-white bg-opacity-20 rounded-full w-12 h-12 flex items-center justify-center mr-4 flex-shrink-0">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Location</h4>
+                                <p class="opacity-90">123 Innovation Drive, Tech City, TC 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Connect With Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.162 5.656a8.384 8.384 0 01-2.402.658A4.196 4.196 0 0021.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 00-7.126 3.814 11.874 11.874 0 01-8.62-4.37 4.168 4.168 0 00-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 01-1.894-.523v.052a4.185 4.185 0 003.355 4.101 4.21 4.21 0 01-1.89.072A4.185 4.185 0 007.97 16.65a8.394 8.394 0 01-6.191 1.732 11.83 11.83 0 006.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 002.087-2.165z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 8.245V12H14.767C14.077 12 14 12.27 14 12.725V14H16L15.851 16H14V22H12V16H10V14H12V12C12 10.093 12.921 9 14.8 9H16V8.245Z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 9.52A2.48 2.48 0 109.52 12 2.48 2.48 0 0012 9.52zm0-6.52C8.69 3 8 3.69 8 7v2H6v3h2v8h3v-8h3v-3h-3V7c0-.69.52-1 1-1h2V3h-2z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full w-10 h-10 flex items-center justify-center transition-all">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14m-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-6">
+                        <svg class="w-8 h-8 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#00C2C7" stroke-width="3" fill="none"/>
+                            <path d="M25 5V25M25 25V45M25 25L5 15M25 25L45 15" stroke="#00C2C7" stroke-width="2" fill="none"/>
+                        </svg>
+                        <span class="text-xl font-bold font-poppins">WeAdvertizer</span>
+                    </div>
+                    <p class="opacity-80 mb-6">Building brands and powering digital transformation through innovative marketing and technology solutions.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold font-poppins mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Home</a></li>
+                        <li><a href="#about" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">About Us</a></li>
+                        <li><a href="#services" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Services</a></li>
+                        <li><a href="#case-studies" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Case Studies</a></li>
+                        <li><a href="#contact" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold font-poppins mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Product Marketing</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">IT Consulting</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Data Analytics</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">n8n Automation</a></li>
+                        <li><a href="#" class="opacity-80 hover:opacity-100 hover:text-teal transition-colors">Web Development</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold font-poppins mb-6">Newsletter</h4>
+                    <p class="opacity-80 mb-4">Stay updated with our latest news and offers.</p>
+                    <form>
+                        <div class="flex">
+                            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-navy">
+                            <button type="submit" class="bg-teal text-navy px-4 py-2 rounded-r-lg font-medium hover:bg-opacity-90 transition-colors">
+                                Subscribe
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-white border-opacity-20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="opacity-80 text-sm mb-4 md:mb-0">&copy; 2023 WeAdvertizer. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="opacity-80 hover:opacity-100 text-sm">Privacy Policy</a>
+                    <a href="#" class="opacity-80 hover:opacity-100 text-sm">Terms of Service</a>
+                    <a href="#" class="opacity-80 hover:opacity-100 text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chat Button -->
+    <div class="chat-button">
+        <button class="bg-teal hover:bg-opacity-90 text-navy w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <button class="bg-navy hover:bg-opacity-90 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Scroll to top button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+        
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Fade in animations on scroll
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const fadeInOnScroll = () => {
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', fadeInOnScroll);
+        window.addEventListener('load', fadeInOnScroll);
+        
+        // Counter animation
+        const counters = document.querySelectorAll('.counter');
+        
+        const runCounter = () => {
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const count = parseInt(counter.innerText);
+                const increment = target / 100;
+                
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(runCounter, 40);
+                } else {
+                    counter.innerText = target;
+                }
+            });
+        };
+        
+        // Start counter animation when in view
+        const counterSection = document.querySelector('#about');
+        
+        const checkCounters = () => {
+            const sectionTop = counterSection.getBoundingClientRect().top;
+            const triggerHeight = window.innerHeight / 1.3;
+            
+            if (sectionTop < triggerHeight) {
+                runCounter();
+                window.removeEventListener('scroll', checkCounters);
+            }
+        };
+        
+        window.addEventListener('scroll', checkCounters);
+        window.addEventListener('load', checkCounters);
+        
+        // Form submission (prevent default for demo)
+        const forms = document.querySelectorAll('form');
+        forms.forEach(form => {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Form submission successful! (This is a demo)');
+                form.reset();
+            });
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94854968b5353a1e',t:'MTc0ODY4MjA4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
