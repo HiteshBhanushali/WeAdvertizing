@@ -8,232 +8,231 @@
     <title>WeAdvertizer - IT Consulting & Marketing Agency</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-   <script>
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    primaryBlue: '#003366',   // Used for headers, buttons, highlights
-                    primaryGreen: '#009966',  // CTA buttons, active states
-                    accentTeal: '#00B2A9',    // Hover or special accents
-                    darkGray: '#333333',      // Text
-                    lightGray: '#F5F5F5',     // Background sections
-                    white: '#FFFFFF',
-                },
-                fontFamily: {
-                    poppins: ['Poppins', 'sans-serif'],
-                    opensans: ['Open Sans', 'sans-serif'],
-                },
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0A2342',
+                        teal: '#00C2C7',
+                        white: '#FFFFFF',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                        opensans: ['Open Sans', 'sans-serif'],
+                    },
+                }
             }
         }
-    }
-</script>
-
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-    body {
-        font-family: 'Open Sans', sans-serif;
-        overflow-x: hidden;
-        background-color: #F5F5F5;
-        color: #333333;
-    }
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Poppins', sans-serif;
-        color: #003366;
-    }
-    .gradient-bg {
-        background: linear-gradient(135deg, #003366 0%, #009966 100%);
-    }
-    .gradient-bg-alt {
-        background: linear-gradient(135deg, #009966 0%, #00B2A9 100%);
-    }
-    .gradient-text {
-        background: linear-gradient(90deg, #00B2A9, #003366);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
-    .hero-gradient {
-        background: linear-gradient(
-                135deg,
-                rgba(0, 51, 102, 0.9) 0%,
-                rgba(0, 178, 169, 0.8) 100%
-            ),
-            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='...your pattern continues here...'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    }
-
-    .animate-float {
-        animation: float 3s ease-in-out infinite;
-    }
-
-    @keyframes float {
-        0% { transform: translateY(0px); }
-        50% { transform: translateY(-10px); }
-        100% { transform: translateY(0px); }
-    }
-
-    .service-card {
-        transition: all 0.3s ease;
-        background-color: #FFFFFF;
-        border: 1px solid #F5F5F5;
-    }
-    .service-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 8px 20px rgba(0, 51, 102, 0.15);
-    }
-
-    .counter-value {
-        transition: all 0.5s ease;
-        color: #009966;
-    }
-
-    .scroll-to-top {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        background-color: #003366;
-        color: #FFFFFF;
-        padding: 10px;
-        border-radius: 50%;
-    }
-    .scroll-to-top:hover {
-        transform: translateY(-5px);
-        background-color: #009966;
-    }
-
-    .chat-button {
-        position: fixed;
-        bottom: 80px;
-        right: 20px;
-        z-index: 99;
-        transition: all 0.3s ease;
-        background-color: #00B2A9;
-        color: #FFFFFF;
-        padding: 10px 16px;
-        border-radius: 8px;
-    }
-    .chat-button:hover {
-        transform: scale(1.1);
-        background-color: #009966;
-    }
-
-    .fade-in {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-    .fade-in.visible {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    .parallax {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-</style>
-
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        .gradient-bg-alt {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #00C2C7, #6a11cb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(10, 35, 66, 0.9) 0%, rgba(0, 194, 199, 0.8) 100%), 
+                        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        .counter-value {
+            transition: all 0.5s ease;
+        }
+        .scroll-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+        }
+        .chat-button {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 99;
+            transition: all 0.3s ease;
+        }
+        .chat-button:hover {
+            transform: scale(1.1);
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body class="bg-white">
     <!-- Navigation -->
-    <nav class="fixed w-full bg-primary-blue bg-opacity-95 text-white z-50 shadow-lg" style="background-color: #003366;">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-        <div class="flex items-center">
-            <svg class="w-10 h-10 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Left part of icon - Primary Blue -->
-                <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#003366" stroke-width="3" fill="none"/>
-                <!-- Right part of icon - Primary Green -->
-                <path d="M25 5V25M25 25V45M25 25L5 15M25 25L45 15" stroke="#009966" stroke-width="2" fill="none"/>
-            </svg>
-            <span class="text-2xl font-bold font-poppins" style="color: #003366;">
-                <span style="color: #003366;">BUZZ</span><span style="color: #009966;">BEYOND</span>
-            </span>
-        </div>
-        <div class="hidden md:flex space-x-8">
-            <a href="#home" class="font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Home</a>
-            <a href="#about" class="font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">About</a>
-            <a href="#services" class="font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Services</a>
-            <a href="#case-studies" class="font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Case Studies</a>
-            <a href="#contact" class="font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Contact</a>
-        </div>
-        <div class="md:hidden">
-            <button id="menu-toggle" class="focus:outline-none" style="color: #FFFFFF;">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    <nav class="fixed w-full bg-navy bg-opacity-95 text-white z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <svg class="w-10 h-10 mr-2" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 5L5 15V35L25 45L45 35V15L25 5Z" stroke="#00C2C7" stroke-width="3" fill="none"/>
+                    <path d="M25 5V25M25 25V45M25 25L5 15M25 25L45 15" stroke="#00C2C7" stroke-width="2" fill="none"/>
                 </svg>
-            </button>
-        </div>
-    </div>
-    <div id="mobile-menu" class="md:hidden hidden" style="background-color: #003366; opacity: 0.95; padding-bottom: 1rem; padding-left: 1rem; padding-right: 1rem;">
-        <a href="#home" class="block py-2 font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Home</a>
-        <a href="#about" class="block py-2 font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">About</a>
-        <a href="#services" class="block py-2 font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Services</a>
-        <a href="#case-studies" class="block py-2 font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Case Studies</a>
-        <a href="#contact" class="block py-2 font-poppins font-medium transition-colors" style="color: #FFFFFF;" onmouseover="this.style.color='#00B2A9'" onmouseout="this.style.color='#FFFFFF'">Contact</a>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<section id="home" class="min-h-screen flex items-center pt-16" style="background-color: #F5F5F5;">
-    <div class="container mx-auto px-4 py-20">
-        <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div style="color: #333333;" class="fade-in">
-                <h1 class="text-4xl md:text-5xl lg:text-4xl font-bold font-poppins mb-4" style="color: #003366;">
-                    WeAdvertizer – Building Brands, Powering Digital Transformation.
-                </h1>
-                <p class="text-xl md:text-2xl mb-8 opacity-90 font-opensans" style="color: #333333;">
-                    From innovative marketing to AI-powered business solutions.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg"
-                        style="background-color: #00B2A9; color: #003366;"
-                        onmouseover="this.style.backgroundColor='#009966';"
-                        onmouseout="this.style.backgroundColor='#00B2A9';"
-                    >
-                        Start Your Digital Journey
-                    </a>
-                    <a href="#contact" class="font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105"
-                        style="background-color: transparent; border: 2px solid #003366; color: #003366;"
-                        onmouseover="this.style.backgroundColor='#00B2A9'; this.style.color='#FFFFFF';"
-                        onmouseout="this.style.backgroundColor='transparent'; this.style.color='#003366';"
-                    >
-                        Schedule a Free Consultation
-                    </a>
-                </div>
+                <span class="text-2xl font-bold font-poppins">WeAdvertizer</span>
             </div>
-            <div class="relative fade-in">
-                <div class="animate-float">
-                    <svg class="w-full h-auto" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M250 50C138.5 50 50 138.5 50 250C50 361.5 138.5 450 250 450C361.5 450 450 361.5 450 250C450 138.5 361.5 50 250 50Z" fill="#003366" fill-opacity="0.2" stroke="#00B2A9" stroke-width="3"/>
-                        <path d="M250 100C166.5 100 100 166.5 100 250C100 333.5 166.5 400 250 400C333.5 400 400 333.5 400 250C400 166.5 333.5 100 250 100Z" fill="#003366" fill-opacity="0.3" stroke="#00B2A9" stroke-width="2"/>
-                        <g opacity="0.9">
-                            <path d="M300 200L200 250L300 300L300 200Z" fill="#00B2A9"/>
-                            <path d="M180 180H220V220H180V180Z" fill="#FFFFFF"/>
-                            <path d="M280 280H320V320H280V280Z" fill="#FFFFFF"/>
-                            <path d="M180 280H220V320H180V280Z" fill="#00B2A9"/>
-                        </g>
-                        <circle cx="250" cy="250" r="15" fill="#FFFFFF"/>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="font-poppins font-medium hover:text-teal transition-colors">Home</a>
+                <a href="#about" class="font-poppins font-medium hover:text-teal transition-colors">About</a>
+                <a href="#services" class="font-poppins font-medium hover:text-teal transition-colors">Services</a>
+                <a href="#case-studies" class="font-poppins font-medium hover:text-teal transition-colors">Case Studies</a>
+                <a href="#contact" class="font-poppins font-medium hover:text-teal transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
-                </div>
+                </button>
             </div>
         </div>
-        <div class="flex justify-center mt-16">
-            <a href="#about" class="animate-bounce" style="color: #003366;">
-                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                </svg>
-            </a>
+        <div id="mobile-menu" class="md:hidden hidden bg-navy bg-opacity-95 pb-4 px-4">
+            <a href="#home" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Home</a>
+            <a href="#about" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">About</a>
+            <a href="#services" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Services</a>
+            <a href="#case-studies" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Case Studies</a>
+            <a href="#contact" class="block py-2 font-poppins font-medium hover:text-teal transition-colors">Contact</a>
         </div>
-    </div>
-</section>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-16">
+        <div class="container mx-auto px-4 py-20">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="text-white fade-in">
+                    <h1 class="text-4xl md:text-5xl lg:text-4xl font-bold font-poppins mb-4">WeAdvertizer – Building Brands, Powering Digital Transformation.</h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90 font-opensans">From innovative marketing to AI-powered business solutions.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-teal hover:bg-opacity-80 text-navy font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                            Start Your Digital Journey
+                        </a>
+                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:bg-opacity-10 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105">
+                            Schedule a Free Consultation
+                        </a>
+                    </div>
+                </div>
+                <div class="relative fade-in">
+                    <div class="animate-float">
+                        <svg class="w-full h-auto" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M250 50C138.5 50 50 138.5 50 250C50 361.5 138.5 450 250 450C361.5 450 450 361.5 450 250C450 138.5 361.5 50 250 50Z" fill="#0A2342" fill-opacity="0.2" stroke="#00C2C7" stroke-width="3"/>
+                            <path d="M250 100C166.5 100 100 166.5 100 250C100 333.5 166.5 400 250 400C333.5 400 400 333.5 400 250C400 166.5 333.5 100 250 100Z" fill="#0A2342" fill-opacity="0.3" stroke="#00C2C7" stroke-width="2"/>
+                            <g opacity="0.9">
+                                <path d="M300 200L200 250L300 300L300 200Z" fill="#00C2C7"/>
+                                <path d="M180 180H220V220H180V180Z" fill="white"/>
+                                <path d="M280 280H320V320H280V280Z" fill="white"/>
+                                <path d="M180 280H220V320H180V280Z" fill="#00C2C7"/>
+                            </g>
+                            <circle cx="250" cy="250" r="15" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-16">
+                <a href="#about" class="animate-bounce">
+                    <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Impact Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold font-poppins mb-4 text-navy">About <span class="gradient-text">WeAdvertizer</span></h2>
+                <p class="text-lg text-gray-700 max-w-3xl mx-auto">We transform businesses through innovative marketing strategies and cutting-edge technology solutions.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="bg-navy rounded-lg p-8 relative z-10">
+                            <h3 class="text-2xl font-bold font-poppins text-white mb-4">Our Story</h3>
+                            <p class="text-white opacity-90 mb-6">Founded with a vision to bridge the gap between marketing excellence and technological innovation, WeAdvertizer has grown into a powerhouse of digital transformation.</p>
+                            <p class="text-white opacity-90">Our team of experts combines creative thinking with technical expertise to deliver solutions that drive real business growth.</p>
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 w-full h-full bg-teal rounded-lg -z-10"></div>
+                    </div>
+                </div>
+                <div class="fade-in">
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="100">0</div>
+                            <p class="text-navy font-medium">Brands Built</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="500">0</div>
+                            <p class="text-navy font-medium">Campaigns Launched</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="99">0</div>
+                            <p class="text-navy font-medium">Client Satisfaction %</p>
+                        </div>
+                        <div class="bg-gray-50 rounded-lg p-6 shadow-lg transform transition-all hover:scale-105">
+                            <div class="text-4xl font-bold text-teal mb-2 counter" data-target="50">0</div>
+                            <p class="text-navy font-medium">Team Experts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center fade-in">
+                <a href="#services" class="inline-block bg-navy hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+                    Discover Our Impact
+                </a>
+            </div>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="py-20 gradient-bg text-white">
